@@ -11,7 +11,7 @@ const areaApi = require('./area');
 function init(port) {
   const app = express();
 
-  app.set('port', (port ||process.env.PORT || 5000))
+  app.set('port', (port ||process.env.PORT || 9999))
 
   app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname + '/index.html'));
